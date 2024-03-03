@@ -1,148 +1,80 @@
 <!DOCTYPE html>
 <html>
 
-<!-- head -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>MSc Finance & Big Data - Data visualization 2023</title>
-
-  <!-- bulma and font awesome -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" crossorigin="anonymous">
 </head>
 
-<!-- body -->
 <body>
 
-  <!-- header -->
   <section class="hero is-info is-bold">
-    <!-- todo: change assignment and name -->
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
           Data Visualization Assignment
         </h1>
         <h2 class="subtitle">
-          Student Name
+          Imane Jamaleddine
         </h2>
       </div>
     </div>
-
-    <!-- change navigation if needed -->
-    <div class="hero-foot">
-      <div class="container">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-
-          <div class="navbar-brand">
-            <a class="navbar-item" href="#top">
-              <span class="icon">
-                <i class="fas fa-home"></i>
-              </span>
-              <span>Home</span>
-            </a>
-          </div>
-
-          <div id="main-navbar" class="navbar-menu">
-            <a class="navbar-item" href="#viz1">
-              <span class="icon">
-                <i class="fas fa-chart-area"></i>
-              </span>
-              <span>Visualization 1</span>
-            </a>
-          </div>
-
-          <div class="navbar-end">
-            <a class="navbar-item" href="#about">
-              <span class="icon">
-                <i class="fas fa-info-circle"></i>
-              </span>
-              <span>About</span>
-            </a>
-          </div>
-
-        </nav>
-      </div>
-    </div>
   </section>
 
+  <!-- Visualization 1: Adjusted Close Prices -->
   <section class="section">
     <div class="container content">
-      <!-- modify if necessary (move visualizations in separate pages) -->
-      <h2 id="viz1">Visualization 1</h2>
-
-      <svg width="100%" height="400" style="background-color: whitesmoke; border: 1px solid black;">
-      </svg>
-
+      <h2 id="viz1">Adjusted Close Prices Comparison</h2>
+      <img src="Images/adjusted_close_prices_comparison.png" alt="Adjusted Close Prices Comparison">
       <h3>Interpretation</h3>
-
       <p>
-        Provide a brief discussion of how to interpret this visualization. Legends provided with the visualization can be self-explanatory, keep it short.
+        This line chart shows the adjusted closing prices for BGRN and GRNB ETFs over time. The chart illustrates how each ETF's price has changed in relation to the other, highlighting periods of volatility and stability.
       </p>
-
       <h3>Discussion</h3>
-
       <p>
-        Provide a brief discussion of the key findings of the visualization, any challenges encountered creating the visualization etc.
-     
-      
+        BGRN shows greater fluctuations in price over the observed period compared to GRNB, indicating potentially higher volatility or different market reactions to underlying assets.
       </p>
-
       <h3>Sources</h3>
-
       <p>
-
-
-#output Visualization on the link
-        
+        Adjusted closing prices were obtained from Yahoo Finance and visualized using Python's matplotlib library.
       </p>
     </div>
   </section>
 
-  <hr class="container">
-
-  <!-- about section -->
-  <!-- fill in, or link to a personal web page  -->
+  <!-- Visualization 2: Cumulative Returns Comparison -->
   <section class="section">
     <div class="container content">
-      <h2 id="about">
-        About Me
-      </h2>
-
-      <div class="media">
-        <div class="media-left">
-          <p class="image is-128x128">
-            <!-- replace with your profile image -->
-            <img src="https://raw.githubusercontent.com/mscfinance-big-data-viz/indiv-assignment-template/master/suicide_densityFR.png">
-          </p>
-        </div>
-
-        <div class="media-content">
-            <p>
-              <!-- replace with your information -->
-              <strong>My name</strong>
-              <br/>
-              Brief biography describing your interests and skills, a profile photo, and/or links to your Github, Linkedin, and other <strong>professional</strong> social media accounts.
-              <br/>
-              <!-- find brand icons at: https://fontawesome.com/icons?d=gallery&s=brands&m=free -->
-              <a href="https://github.com/">
-                <span class="fab fa-github"></span>
-                <span>Github</span>
-              </a>
-              &bullet;
-              <a href="https://www.linkedin.com/">
-                <span class="fab fa-linkedin"></span>
-                <span>LinkedIn</span>
-              </a>
-            </p>
-
-        </div>
-      </div>
-
+      <h2 id="viz2">Cumulative Returns Comparison</h2>
+      <img src="Images/Cumulative_Returns_Comparison.png" alt="Cumulative Returns Comparison">
+      <h3>Interpretation</h3>
+      <p>
+        This visualization compares the cumulative returns of the BGRN and GRNB ETFs. Cumulative returns are a measure of the total change in investment value over a period of time.
+      </p>
+      <h3>Discussion</h3>
+      <p>
+        Both ETFs experienced significant growth with some downturns, reflecting the impact of market conditions on green bond investments.
+      </p>
     </div>
   </section>
 
+  <!-- Visualization 3: Annual Performance Comparison -->
+  <section class="section">
+    <div class="container content">
+      <h2 id="viz3">Annual Performance Comparison</h2>
+      <img src="Images/Annual_Performance_Comparison.png" alt="Annual Performance Comparison">
+      <h3>Interpretation</h3>
+      <p>
+        The bar chart presents the average annual cumulative returns for the BGRN and GRNB ETFs, along with the market index. It provides a snapshot of their performance relative to each other by year.
+      </p>
+      <h3>Discussion</h3>
+      <p>
+        The market index appears to outperform both ETFs in certain years, suggesting a more in-depth analysis could be valuable to understand the factors driving these differences.
+      </p>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="content has-text-centered">
@@ -152,9 +84,7 @@
           <span>Back to Top</span>
         </a>
         <br/>
-        <a href="https://www.neoma-bs.fr/formations/masteres-specialises-masters-of-science-temps-partiel/msc-in-finance-and-big-data/presentation-du-programme">MSc Finance & Big Data / Data visualization</a>
-        &bullet;
-        <a href="https://https://www.neoma-bs.fr/">Neoma Business School</a>
+        MSc Finance & Big Data / Data visualization at Neoma Business School
       </small>
     </div>
   </footer>
